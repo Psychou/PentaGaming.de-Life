@@ -8,18 +8,18 @@ class EditorData
 	toggles=2;
 	class ItemIDProvider
 	{
-		nextID=6361;
+		nextID=6205;
 	};
 	class MarkerIDProvider
 	{
-		nextID=229;
+		nextID=222;
 	};
 	class Camera
 	{
-		pos[]={15258.884,4243.7568,15315.082};
-		dir[]={0.12649584,-0.95685554,-0.26182064};
-		up[]={0.41626713,0.29050958,-0.86158687};
-		aside[]={-0.90046662,-1.3517274e-007,-0.43505368};
+		pos[]={12328.854,102.14497,13078.618};
+		dir[]={-0.80193341,-0.50229204,-0.32344618};
+		up[]={-0.46583086,0.86469746,-0.18788476};
+		aside[]={-0.37405634,-4.0512532e-008,0.92741233};
 	};
 };
 binarizationWanted=0;
@@ -339,6 +339,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -353,24 +371,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -428,7 +428,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1430;
+		items=1313;
 		class Item0
 		{
 			dataType="Marker";
@@ -2399,7 +2399,7 @@ class Mission
 			position[]={6849.2598,2.6600001,7437.4902};
 			name="kart_shop_1";
 			type="Empty";
-			angle=229.15697;
+			angle=229.157;
 			id=203;
 		};
 		class Item189
@@ -8604,6 +8604,7 @@ class Mission
 			};
 			id=748;
 			type="Land_CashDesk_F";
+			atlOffset=0.046278;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14818,7 +14819,7 @@ class Mission
 					};
 					id=960;
 					type="C_man_polo_3_F";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15940,7 +15941,7 @@ class Mission
 					};
 					id=987;
 					type="C_man_1";
-					atlOffset=0.1111927;
+					atlOffset=0.11119366;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15970,8 +15971,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={11669.337,3.4044387,2772.3401};
-						angles[]={0,0.058852501,0};
+						position[]={11669.337,3.4049201,2772.3403};
+						angles[]={0,0.058852673,0};
 					};
 					side="Civilian";
 					class Attributes
@@ -15983,7 +15984,7 @@ class Mission
 					};
 					id=988;
 					type="C_man_1";
-					atlOffset=0.34299994;
+					atlOffset=0.3434813;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16005,26 +16006,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute1
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.97000003;
-								};
-							};
-						};
-						nAttributes=2;
+						nAttributes=1;
 					};
 				};
 				class Item42
@@ -16080,6 +16062,7 @@ class Mission
 						angles[]={0,0.14382911,6.272521};
 					};
 					side="Civilian";
+					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -16089,7 +16072,6 @@ class Mission
 					};
 					id=990;
 					type="C_man_p_fugitive_F_asia";
-					atlOffset=0.5736537;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17646,7 +17628,7 @@ class Mission
 					};
 					id=1027;
 					type="C_man_1";
-					atlOffset=0.0055503845;
+					atlOffset=0.0055499077;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -18919,7 +18901,7 @@ class Mission
 					};
 					id=939;
 					type="C_man_1";
-					atlOffset=0.11119366;
+					atlOffset=0.11119461;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19177,7 +19159,7 @@ class Mission
 					};
 					id=1069;
 					type="C_Nikos_aged";
-					atlOffset=0.053512573;
+					atlOffset=0.099498749;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -24913,7 +24895,7 @@ class Mission
 			colorName="ColorGreen";
 			angle=257.53326;
 			id=2000;
-			atlOffset=0.11424375;
+			atlOffset=0.004250288;
 		};
 		class Item640
 		{
@@ -24932,7 +24914,7 @@ class Mission
 			};
 			id=2001;
 			type="Land_Atm_02_F";
-			atlOffset=0.11001492;
+			atlOffset=2.1457672e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -27143,14 +27125,13 @@ class Mission
 				angles[]={0,0,6.2823472};
 			};
 			side="Empty";
-			flags=4;
 			class Attributes
 			{
 				description="RIP Tonic";
 			};
 			id=4062;
 			type="Land_Can_V3_F";
-			atlOffset=0.00048446655;
+			atlOffset=0.50376129;
 		};
 		class Item749
 		{
@@ -29819,7 +29800,6 @@ class Mission
 			};
 			id=5418;
 			type="Land_LampHalogen_F";
-			atlOffset=4.7683716e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41556,14 +41536,13 @@ class Mission
 				angles[]={0,3.0282509,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=5738;
 			type="Land_Wall_IndCnc_4_F";
-			atlOffset=3.9120855;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41637,14 +41616,13 @@ class Mission
 				angles[]={0,3.0282509,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=5740;
 			type="Land_Wall_IndCnc_4_F";
-			atlOffset=4.1083899;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -41759,14 +41737,13 @@ class Mission
 				angles[]={0,4.7544513,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=5743;
 			type="Land_Wall_IndCnc_4_F";
-			atlOffset=3.8065157;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -45762,2077 +45739,6 @@ class Mission
 			id=6190;
 			type="Land_Radar_Small_F";
 			atlOffset=-3.0755997e-005;
-		};
-		class Item1313
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15296.966,4102.4521,15306.347};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6205;
-			type="Land_Pier_F";
-			atlOffset=4167.4473;
-		};
-		class Item1314
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15296.982,4102.4653,15320.874};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6206;
-			type="Land_Pier_F";
-			atlOffset=4165.9717;
-		};
-		class Item1315
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.033,4102.4712,15335.776};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6207;
-			type="Land_Pier_F";
-			atlOffset=4164.8765;
-		};
-		class Item1316
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.08,4102.479,15350.007};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6208;
-			type="Land_Pier_F";
-			atlOffset=4166.6074;
-		};
-		class Item1317
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.61,4102.4487,15306.352};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6210;
-			type="Land_Pier_F";
-			atlOffset=4168.1553;
-		};
-		class Item1318
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.627,4102.4629,15320.879};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6211;
-			type="Land_Pier_F";
-			atlOffset=4166.769;
-		};
-		class Item1319
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.678,4102.4668,15335.781};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6212;
-			type="Land_Pier_F";
-			atlOffset=4166.9121;
-		};
-		class Item1320
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.725,4102.4746,15350.012};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6213;
-			type="Land_Pier_F";
-			atlOffset=4166.6304;
-		};
-		class Item1321
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.289,4102.4497,15306.371};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6214;
-			type="Land_Pier_F";
-			atlOffset=4169.9341;
-		};
-		class Item1322
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.306,4102.4634,15320.898};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6215;
-			type="Land_Pier_F";
-			atlOffset=4168.6431;
-		};
-		class Item1323
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.356,4102.4683,15335.8};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6216;
-			type="Land_Pier_F";
-			atlOffset=4167.3291;
-		};
-		class Item1324
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.403,4102.4756,15350.031};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6217;
-			type="Land_Pier_F";
-			atlOffset=4168.6802;
-		};
-		class Item1325
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.29,4102.4136,15247.594};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6218;
-			type="Land_Pier_F";
-			atlOffset=4166.5391;
-		};
-		class Item1326
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.308,4102.4277,15262.121};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6219;
-			type="Land_Pier_F";
-			atlOffset=4167.3633;
-		};
-		class Item1327
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.358,4102.4316,15277.023};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6220;
-			type="Land_Pier_F";
-			atlOffset=4169.6143;
-		};
-		class Item1328
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.405,4102.439,15291.254};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6221;
-			type="Land_Pier_F";
-			atlOffset=4169.9023;
-		};
-		class Item1329
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.52,4102.3999,15247.597};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6222;
-			type="Land_Pier_F";
-			atlOffset=4165.1572;
-		};
-		class Item1330
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.537,4102.4136,15262.124};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6223;
-			type="Land_Pier_F";
-			atlOffset=4167.3037;
-		};
-		class Item1331
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.588,4102.4185,15277.026};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6224;
-			type="Land_Pier_F";
-			atlOffset=4168.644;
-		};
-		class Item1332
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15338.635,4102.4263,15291.257};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6225;
-			type="Land_Pier_F";
-			atlOffset=4168.7793;
-		};
-		class Item1333
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.014,4102.3848,15247.592};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6226;
-			type="Land_Pier_F";
-			atlOffset=4170.1182;
-		};
-		class Item1334
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.03,4102.3984,15262.119};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6227;
-			type="Land_Pier_F";
-			atlOffset=4169.8931;
-		};
-		class Item1335
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.081,4102.4023,15277.021};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6228;
-			type="Land_Pier_F";
-			atlOffset=4169.5112;
-		};
-		class Item1336
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15297.128,4102.4102,15291.252};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6229;
-			type="Land_Pier_F";
-			atlOffset=4168.6929;
-		};
-		class Item1337
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.153,4108.8076,15240.984};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6244;
-			type="Land_CncWall4_F";
-			atlOffset=4170.311;
-		};
-		class Item1338
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15237.323,4108.8115,15238.786};
-				angles[]={0,6.2782288,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6245;
-			type="Land_CncWall4_F";
-		};
-		class Item1339
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.15,4108.7988,15246.185};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6246;
-			type="Land_CncWall4_F";
-			atlOffset=4169.2861;
-		};
-		class Item1340
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.135,4108.791,15251.37};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6247;
-			type="Land_CncWall4_F";
-		};
-		class Item1341
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.148,4108.8203,15256.59};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6248;
-			type="Land_CncWall4_F";
-		};
-		class Item1342
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.122,4108.811,15261.816};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6249;
-			type="Land_CncWall4_F";
-			atlOffset=4169.0107;
-		};
-		class Item1343
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.106,4108.8027,15267.034};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6250;
-			type="Land_CncWall4_F";
-			atlOffset=4170.061;
-		};
-		class Item1344
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.102,4108.8232,15272.276};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6251;
-			type="Land_CncWall4_F";
-		};
-		class Item1345
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.087,4108.8145,15277.504};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6252;
-			type="Land_CncWall4_F";
-		};
-		class Item1346
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.066,4108.8369,15282.771};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6253;
-			type="Land_CncWall4_F";
-			atlOffset=0.00048828125;
-		};
-		class Item1347
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15234.99,4108.8555,15329.727};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6254;
-			type="Land_CncWall4_F";
-			atlOffset=4166.8965;
-		};
-		class Item1348
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.011,4108.833,15324.459};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6255;
-			type="Land_CncWall4_F";
-			atlOffset=4167.9878;
-		};
-		class Item1349
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.025,4108.8418,15319.231};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6256;
-			type="Land_CncWall4_F";
-			atlOffset=4169.0962;
-		};
-		class Item1350
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.03,4108.8208,15313.989};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6257;
-			type="Land_CncWall4_F";
-			atlOffset=4170.0483;
-		};
-		class Item1351
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.046,4108.8291,15308.771};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6258;
-			type="Land_CncWall4_F";
-		};
-		class Item1352
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.072,4108.8389,15303.545};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6259;
-			type="Land_CncWall4_F";
-			atlOffset=0.0009765625;
-		};
-		class Item1353
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.059,4108.8091,15298.325};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6260;
-			type="Land_CncWall4_F";
-			atlOffset=4171.272;
-		};
-		class Item1354
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.074,4108.8174,15293.14};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6261;
-			type="Land_CncWall4_F";
-			atlOffset=4171.4819;
-		};
-		class Item1355
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15235.077,4108.8262,15287.939};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6262;
-			type="Land_CncWall4_F";
-			atlOffset=4171.687;
-		};
-		class Item1356
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15234.956,4108.8931,15350.584};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6268;
-			type="Land_CncWall4_F";
-			atlOffset=0.034667969;
-		};
-		class Item1357
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15234.942,4108.8638,15345.364};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6269;
-			type="Land_CncWall4_F";
-			atlOffset=4169.8755;
-		};
-		class Item1358
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15234.958,4108.8716,15340.179};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6270;
-			type="Land_CncWall4_F";
-			atlOffset=0.026855469;
-		};
-		class Item1359
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15234.961,4108.8804,15334.979};
-				angles[]={0,1.5715119,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6271;
-			type="Land_CncWall4_F";
-			atlOffset=0.02734375;
-		};
-		class Item1360
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15242.63,4108.8501,15238.656};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6272;
-			type="Land_CncWall4_F";
-			atlOffset=0.038085938;
-		};
-		class Item1361
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15247.849,4108.8208,15238.612};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6273;
-			type="Land_CncWall4_F";
-			atlOffset=0.0087890625;
-		};
-		class Item1362
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15253.034,4108.8286,15238.599};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6274;
-			type="Land_CncWall4_F";
-			atlOffset=0.016601563;
-		};
-		class Item1363
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15258.234,4108.8374,15238.572};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6275;
-			type="Land_CncWall4_F";
-			atlOffset=0.025390625;
-		};
-		class Item1364
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15263.487,4108.812,15238.571};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6276;
-			type="Land_CncWall4_F";
-		};
-		class Item1365
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15268.755,4108.79,15238.561};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6277;
-			type="Land_CncWall4_F";
-			atlOffset=4172.2993;
-		};
-		class Item1366
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15273.982,4108.7983,15238.546};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6278;
-			type="Land_CncWall4_F";
-			atlOffset=4172.2441;
-		};
-		class Item1367
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15279.225,4108.7778,15238.521};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6279;
-			type="Land_CncWall4_F";
-			atlOffset=4171.8296;
-		};
-		class Item1368
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15284.442,4108.7861,15238.506};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6280;
-			type="Land_CncWall4_F";
-			atlOffset=0.0029296875;
-		};
-		class Item1369
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15289.668,4108.7954,15238.503};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6281;
-			type="Land_CncWall4_F";
-			atlOffset=0.012207031;
-		};
-		class Item1370
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15294.888,4108.7661,15238.459};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6282;
-			type="Land_CncWall4_F";
-			atlOffset=4172.0098;
-		};
-		class Item1371
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15300.073,4108.7739,15238.445};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6283;
-			type="Land_CncWall4_F";
-			atlOffset=4172.4043;
-		};
-		class Item1372
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15305.273,4108.7827,15238.419};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6284;
-			type="Land_CncWall4_F";
-			atlOffset=4171.333;
-		};
-		class Item1373
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15310.441,4108.7939,15238.378};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6285;
-			type="Land_CncWall4_F";
-			atlOffset=0.010253906;
-		};
-		class Item1374
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15315.71,4108.7715,15238.369};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6286;
-			type="Land_CncWall4_F";
-			atlOffset=4169.0996;
-		};
-		class Item1375
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15320.938,4108.7803,15238.353};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6287;
-			type="Land_CncWall4_F";
-			atlOffset=4168.7754;
-		};
-		class Item1376
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15326.179,4108.7598,15238.328};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6288;
-			type="Land_CncWall4_F";
-			atlOffset=4168.4556;
-		};
-		class Item1377
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15331.397,4108.7681,15238.314};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6289;
-			type="Land_CncWall4_F";
-			atlOffset=4167.9956;
-		};
-		class Item1378
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15336.623,4108.7773,15238.31};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6290;
-			type="Land_CncWall4_F";
-			atlOffset=4167.0562;
-		};
-		class Item1379
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15341.843,4108.748,15238.267};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6291;
-			type="Land_CncWall4_F";
-			atlOffset=4166.0972;
-		};
-		class Item1380
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15347.028,4108.7559,15238.252};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6292;
-			type="Land_CncWall4_F";
-			atlOffset=4165.5845;
-		};
-		class Item1381
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15352.229,4108.7646,15238.226};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6293;
-			type="Land_CncWall4_F";
-			atlOffset=4165.6606;
-		};
-		class Item1382
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15356.224,4108.7988,15238.165};
-				angles[]={0,0.006446416,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6294;
-			type="Land_CncWall4_F";
-			atlOffset=4165.7598;
-		};
-		class Item1383
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.956,4108.79,15312.089};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6295;
-			type="Land_CncWall4_F";
-			atlOffset=4169.2349;
-		};
-		class Item1384
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.896,4108.7559,15308.094};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6296;
-			type="Land_CncWall4_F";
-			atlOffset=4169.6797;
-		};
-		class Item1385
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.873,4108.7471,15302.894};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6297;
-			type="Land_CncWall4_F";
-			atlOffset=4170.293;
-		};
-		class Item1386
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.86,4108.7393,15297.708};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6298;
-			type="Land_CncWall4_F";
-			atlOffset=4170.3438;
-		};
-		class Item1387
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.819,4108.7686,15292.488};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6299;
-			type="Land_CncWall4_F";
-			atlOffset=4169.7026;
-		};
-		class Item1388
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.816,4108.7593,15287.263};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6300;
-			type="Land_CncWall4_F";
-			atlOffset=4169.0205;
-		};
-		class Item1389
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.782,4108.7715,15276.803};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6301;
-			type="Land_CncWall4_F";
-			atlOffset=4169.4702;
-		};
-		class Item1390
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.805,4108.751,15282.044};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6302;
-			type="Land_CncWall4_F";
-			atlOffset=4168.9766;
-		};
-		class Item1391
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.768,4108.7627,15271.575};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6303;
-			type="Land_CncWall4_F";
-			atlOffset=4169.9351;
-		};
-		class Item1392
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.761,4108.7852,15266.307};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6304;
-			type="Land_CncWall4_F";
-			atlOffset=4169.0962;
-		};
-		class Item1393
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.722,4108.7739,15261.139};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6305;
-			type="Land_CncWall4_F";
-			atlOffset=4167.6348;
-		};
-		class Item1394
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.697,4108.7651,15255.938};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6306;
-			type="Land_CncWall4_F";
-			atlOffset=4166.1563;
-		};
-		class Item1395
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.645,4108.7866,15245.533};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6307;
-			type="Land_CncWall4_F";
-			atlOffset=4165.6802;
-		};
-		class Item1396
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.686,4108.7573,15250.753};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6308;
-			type="Land_CncWall4_F";
-			atlOffset=4165.7622;
-		};
-		class Item1397
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.644,4108.7773,15240.308};
-				angles[]={0,4.7184429,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6309;
-			type="Land_CncWall4_F";
-			atlOffset=4165.5591;
-		};
-		class Item1398
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15356.11,4108.8535,15352.774};
-				angles[]={0,3.9656665,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6316;
-			type="Land_CncWall4_F";
-		};
-		class Item1399
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15357.771,4108.8374,15348.611};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6318;
-			type="Land_CncWall4_F";
-			atlOffset=4169.7388;
-		};
-		class Item1400
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15357.965,4108.8599,15343.347};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6319;
-			type="Land_CncWall4_F";
-			atlOffset=4169.9595;
-		};
-		class Item1401
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.123,4108.8486,15338.181};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6320;
-			type="Land_CncWall4_F";
-			atlOffset=0.0024414063;
-		};
-		class Item1402
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.297,4108.8398,15332.983};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6321;
-			type="Land_CncWall4_F";
-			atlOffset=4168.585;
-		};
-		class Item1403
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.641,4108.8613,15322.583};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6322;
-			type="Land_CncWall4_F";
-			atlOffset=0.017578125;
-		};
-		class Item1404
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.483,4108.832,15327.801};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6323;
-			type="Land_CncWall4_F";
-			atlOffset=4168.293;
-		};
-		class Item1405
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15358.839,4108.8521,15317.361};
-				angles[]={0,4.6803055,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6324;
-			type="Land_CncWall4_F";
-			atlOffset=4168.834;
-		};
-		class Item1406
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15352.088,4108.8506,15354.575};
-				angles[]={0,3.1512094,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6325;
-			type="Land_CncWall4_F";
-		};
-		class Item1407
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15346.842,4108.8506,15354.609};
-				angles[]={0,3.1512094,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6326;
-			type="Land_CncWall4_F";
-		};
-		class Item1408
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15295.905,4108.9404,15354.867};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6327;
-			type="Land_CncWall4_F";
-			atlOffset=0.0859375;
-		};
-		class Item1409
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15301.173,4108.9629,15354.92};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6328;
-			type="Land_CncWall4_F";
-			atlOffset=0.10839844;
-		};
-		class Item1410
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15306.342,4108.9521,15354.938};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6329;
-			type="Land_CncWall4_F";
-			atlOffset=0.09765625;
-		};
-		class Item1411
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15311.542,4108.9434,15354.972};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6330;
-			type="Land_CncWall4_F";
-			atlOffset=0.088867188;
-		};
-		class Item1412
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15316.728,4108.9351,15355.019};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6331;
-			type="Land_CncWall4_F";
-			atlOffset=0.080566406;
-		};
-		class Item1413
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15321.947,4108.9648,15355.035};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6332;
-			type="Land_CncWall4_F";
-			atlOffset=0.11474609;
-		};
-		class Item1414
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15327.173,4108.9551,15355.093};
-				angles[]={0,3.136482,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6333;
-			type="Land_CncWall4_F";
-			atlOffset=0.10546875;
-		};
-		class Item1415
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15332.446,4108.8931,15355.067};
-				angles[]={0,3.1746194,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6334;
-			type="Land_CncWall4_F";
-			atlOffset=0.04296875;
-		};
-		class Item1416
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15336.438,4108.8589,15354.9};
-				angles[]={0,3.1746194,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6335;
-			type="Land_CncWall4_F";
-			atlOffset=0.0087890625;
-		};
-		class Item1417
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15341.637,4108.8501,15354.736};
-				angles[]={0,3.1746194,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6336;
-			type="Land_CncWall4_F";
-			atlOffset=4168.6064;
-		};
-		class Item1418
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15244.97,4108.9448,15354.864};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6337;
-			type="Land_CncWall4_F";
-			atlOffset=0.09375;
-		};
-		class Item1419
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15250.237,4108.9668,15354.939};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6338;
-			type="Land_CncWall4_F";
-			atlOffset=0.11572266;
-		};
-		class Item1420
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15255.405,4108.9561,15354.98};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6339;
-			type="Land_CncWall4_F";
-			atlOffset=0.10498047;
-		};
-		class Item1421
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15260.605,4108.9473,15355.036};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6340;
-			type="Land_CncWall4_F";
-			atlOffset=0.096191406;
-		};
-		class Item1422
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15265.791,4108.9395,15355.104};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6341;
-			type="Land_CncWall4_F";
-			atlOffset=0.088867188;
-		};
-		class Item1423
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15271.011,4108.9688,15355.144};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6342;
-			type="Land_CncWall4_F";
-			atlOffset=0.11816406;
-		};
-		class Item1424
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15276.236,4108.9595,15355.223};
-				angles[]={0,3.1322334,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6343;
-			type="Land_CncWall4_F";
-			atlOffset=0.10546875;
-		};
-		class Item1425
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15281.51,4108.897,15355.22};
-				angles[]={0,3.1703708,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6344;
-			type="Land_CncWall4_F";
-			atlOffset=0.04296875;
-		};
-		class Item1426
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15285.502,4108.8628,15355.069};
-				angles[]={0,3.1703708,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6345;
-			type="Land_CncWall4_F";
-			atlOffset=0.0083007813;
-		};
-		class Item1427
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15290.7,4108.854,15354.928};
-				angles[]={0,3.1703708,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6346;
-			type="Land_CncWall4_F";
-			atlOffset=4168.1714;
-		};
-		class Item1428
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15237.058,4108.8525,15353.933};
-				angles[]={0,2.6816945,0};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6347;
-			type="Land_CncWall4_F";
-		};
-		class Item1429
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={15241.748,4108.8506,15354.995};
-				angles[]={0,3.1490865,0};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-				init="this allowDamage false; this enableSimulation false;";
-			};
-			id=6348;
-			type="Land_CncWall4_F";
-			atlOffset=4170.0977;
 		};
 	};
 };
