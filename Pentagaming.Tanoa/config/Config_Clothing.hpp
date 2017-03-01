@@ -15,6 +15,20 @@
 *
 */
 class Clothing {
+	class Team {
+		title = "STR_Shops_C_Team";
+		conditions = "licen_civ_Team";
+		side = "civ";
+		uniforms[] = {
+			{ "NONE", $STR_C_Remove_uniforms, 0 ""},
+			{ "U_B_Protagonist_VR", 0 ""},
+			{}
+		}; 
+		headgear [] = {
+			{ "H_RacingHelmet_1_white_F", 0 ,""},
+			{}
+		};
+	};
     class bruce {
         title = "STR_Shops_C_Bruce";
         conditions = "";

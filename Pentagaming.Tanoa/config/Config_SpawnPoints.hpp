@@ -19,11 +19,11 @@ class CfgSpawnPoints {
                 conditions = "!license_civ_rebel";
             };
 
-            class Athira {
-                displayName = "Athira";
-                spawnMarker = "civ_spawn_3";
+            class Team-Insel {
+                displayName = "Team-Insel";
+                spawnMarker = "ADM_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
+                conditions = "license_civ_Team";
             };
 
             class Pyrgos {
@@ -126,6 +126,13 @@ class CfgSpawnPoints {
     class Tanoa {
 
         class Civilian {
+			class Team-Spawn {
+				desplayName = "Team-Insel"
+				spawnMarker = "Team_spawn_1"
+			    icon = "\a3\ui_f\data\map\MapControl\watertower_ca"
+				conditions = "license_civ_Team"
+			};
+			
             class Georgetown {
                 displayName = "Georgetown";
                 spawnMarker = "civ_spawn_1";
