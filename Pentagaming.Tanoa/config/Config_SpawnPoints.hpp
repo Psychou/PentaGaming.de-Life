@@ -19,13 +19,6 @@ class CfgSpawnPoints {
                 conditions = "!license_civ_rebel";
             };
 
-            class Team-Insel {
-                displayName = "Team-Insel";
-                spawnMarker = "ADM_spawn";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_Team";
-            };
-
             class Pyrgos {
                 displayName = "Pyrgos";
                 spawnMarker = "civ_spawn_2";
