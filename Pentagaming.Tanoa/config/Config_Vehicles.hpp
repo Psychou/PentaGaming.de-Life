@@ -520,8 +520,8 @@ class LifeCfgVehicles {
             { "Taxi", "civ", {
                 "#(argb,8,8,3)color(0.6,0.3,0.01,1)"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Polizei", "cop", {
+                "textures\police_offroad.jpg"
             }, "" }
         };
     };
@@ -568,8 +568,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Green", "civ", {
                 "\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_sport06_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "#(ai,64,64,1)Fresnel(1.3,7)"
+            { "Polizei", "cop", {
+                "textures\PoliceHB.jpg"
             }, "" }
         };
     };
@@ -683,17 +683,35 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_driver || {!(playerSide isEqualTo civilian)}";
         price = 30000;
         textures[] = {
-            { "Dark Red", "civ", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_co.paa"
+            { "BMW X6", "civ", {
+                "textures\X6_suv.jpg"
             }, "" },
-            { "Silver", "civ", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_03_co.paa"
+			{ "Kitty", "civ", {
+                "textures\kitty.jpg"
+            }, "" },
+            { "Playerindex", "civ", {
+                "textures\pi_suv1.paa"
             }, "" },
             { "Orange", "civ", {
                 "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_04_co.paa"
             }, "" },
-            { "Police", "cop", {
-                "\a3\soft_f_gamma\SUV_01\Data\suv_01_ext_02_co.paa"
+			{ "Batman", "civ", {
+                "textures\batman_suv.jpg"
+            }, "" },
+			{ "Ferrari", "civ", {
+                "textures\civ_suv_ferrari.jpg"
+            }, "" },
+			{ "Blaue Flammen", "civ", {
+                "textures\civ_suv_skull.jpg"
+            }, "" },
+			{ "Rebel", "reb", {
+                "textures\camo_suv.jpg"
+            }, "" },
+			{ "Medic", "med", {
+                "textures\med_suv.jpg"
+            }, "" },
+            { "Polizei", "cop", {
+                "textures\cop_suv.jpg"
             }, "" }
         };
     };
@@ -754,11 +772,11 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
         price = 245000;
         textures[] = {
-            { "Police", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
+            { "Polizei", "cop", {
+                "textures\heli_police_light_co.jpg"
             }, "" },
-            { "Sheriff", "civ", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
+            { "Medic", "med", {
+                "textures\med_hummingbird.jpg"
             }, "" },
             { "Civ Blue", "civ", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_blue_co.paa"
@@ -812,8 +830,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
         conditions = "license_civ_pilot || {license_med_mAir} || {(playerSide isEqualTo west)}";
         price = 750000;
         textures[] = {
-            { "Black", "cop", {
-                "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_co.paa"
+            { "Polizei", "cop", {
+                "textures\police_orca.jpg"
             }, "" },
             { "White / Blue", "civ", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_civilian_co.paa"
@@ -824,8 +842,8 @@ will modify the virtual space and the price of the vehicle, but other informatio
             { "Desert Digi", "reb", {
                 "\a3\air_f\Heli_Light_02\Data\heli_light_02_ext_opfor_co.paa"
             }, "" },
-            { "EMS White", "med", {
-                "#(argb,8,8,3)color(1,1,1,0.8)"
+            { "Medic", "med", {
+                "textures\med_orca.jpg"
             }, "" }
         };
     };
