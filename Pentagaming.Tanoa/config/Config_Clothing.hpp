@@ -24,7 +24,7 @@ class Clothing {
 			{ "U_B_Protagonist_VR", 0 ""},
 			{}
 		}; 
-		headgear [] = {
+		headgear[] = {
 			{ "H_RacingHelmet_1_white_F", 0 ,""},
 			{}
 		};

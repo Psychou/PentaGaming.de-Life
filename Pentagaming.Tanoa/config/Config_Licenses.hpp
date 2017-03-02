@@ -7,6 +7,36 @@
 *        side = side indicator
 */
 class Licenses {
+	//Team Licenses
+	class Team {
+	    variable = "Team";
+		displayName = "STR_License_Team";
+		price = "";
+		illegal = false;
+		side = "civ";
+	};
+    class Team_Leitung {
+	    variable = "TeamLeitung";
+		displayName = "STR_License_TeamLeitung";
+		price = "";
+		illegal = false;
+		side = "civ";
+	};
+	class Team_Admin {
+	    variable = "TeamAdmin";
+		displayName = "STR_License_TeamAdmin";
+		price = "";
+		illegal = false;
+		side = "civ";
+	};
+	class Team_Supp {
+	    variable = "TeamSupp";
+		displayName = "STR_License_TeamSupp";
+		price = "";
+		illegal = false;
+		side = "civ";
+	};
+	
     //Civilian Licenses
     class driver {
         variable = "driver";

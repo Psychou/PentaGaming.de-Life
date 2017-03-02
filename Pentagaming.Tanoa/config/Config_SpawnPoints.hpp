@@ -117,13 +117,12 @@ class CfgSpawnPoints {
     };
 
     class Tanoa {
-
         class Civilian {
-			class Team-Spawn {
-				desplayName = "Team-Insel"
-				spawnMarker = "Team_spawn_1"
-			    icon = "\a3\ui_f\data\map\MapControl\watertower_ca"
-				conditions = "license_civ_Team"
+			class TeamSpawn {
+				desplayName = "Team-Insel";
+				spawnMarker = "Team_spawn_1";
+			    icon = "\a3\ui_f\data\map\MapControl\watertower_ca";
+				conditions = "license_civ_Team";
 			};
 			
             class Georgetown {
