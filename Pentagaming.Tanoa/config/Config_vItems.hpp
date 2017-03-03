@@ -13,7 +13,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelFull", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelEmpty", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
@@ -27,14 +27,14 @@ class VirtualShops {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "peach", "boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "peach", "boltcutter", "blastingcharge" };
     };
 
     class wongs {
@@ -55,7 +55,7 @@ class VirtualShops {
         name = "STR_Shop_Station_Coffee";
         side = "";
         conditions = "";
-        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelFull"};
+        items[] = { "coffee", "donuts", "redgull", "toolkit", "fuelEmpty"};
     };
 
     class drugdealer {
@@ -69,7 +69,7 @@ class VirtualShops {
         name = "STR_Shops_Oil";
         side = "civ";
         conditions = "";
-        items[] = { "oil_processed", "pickaxe", "fuelFull" };
+        items[] = { "oil_processed", "pickaxe", "fuelEmpty" };
     };
 
     class fishmarket {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelFull", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelEmpty", "defusekit", "defibrillator" };
     };
 };
 
@@ -189,8 +189,8 @@ class VirtualItems {
         icon = "icons\ico_fuelEmpty.paa";
     };
 
-    class fuelFull {
-        variable = "fuelFull";
+    class fuelEmpty {
+        variable = "fuelEmpty";
         displayName = "STR_Item_FuelF";
         weight = 5;
         buyPrice = 850;
