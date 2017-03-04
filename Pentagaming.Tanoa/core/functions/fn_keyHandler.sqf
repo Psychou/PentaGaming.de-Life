@@ -141,6 +141,73 @@ switch (_code) do {
         };
     };
 
+	//Shift+P = Faded Sound
+	case 25:
+	{
+		if(_shift) then
+		{
+			[] call life_fnc_fadeSound;
+			_handled = true;
+		};
+	};
+	
+	//F1 Tastenbelegung
+	case 59:
+	{
+		if(!_alt && !_ctrlKey) then
+		{
+			[] spawn life_fnc_hilfe;
+		};
+	};
+	
+	//F2 Legale Berufe
+	case 60:
+	{
+		if(!_alt && !_ctrlKey) then
+		{
+			[] spawn life_fnc_berufe;
+		};
+	};
+	
+	//F3 Illegale Berufe
+	case 61:
+	{
+		if(!_alt && !_ctrlKey) then
+		{
+			[] spawn life_fnc_berufe2;
+		};
+	};
+	
+	//Hallo!
+	case 15: 
+	{
+		if(!(player GVAR ["restrained", false]) && !(player GVAR ["surrender", false]) && (alive player)) then
+		{
+			cutText [format["Servus!"], "PLAIN DOWN"];
+			player playActionNow "gestureHi";
+		};
+	};
+	
+	// O, police gate opener
+    case 24:
+    {
+    		if (!_shift && !_alt && !_ctrlKey && (playerSide == west) && (vehicle player != player)) then 
+			{
+    			[] call life_fnc_copOpener;
+    		}	else
+			{
+			if (!_shift && !_alt && !_ctrlKey && (playerSide == independent) && (vehicle player != player)) then 
+			{
+				[] call life_fnc_copOpener;
+			} else
+			{
+			if(!_alt && !_ctrlKey && !dialog && !(player GVAR ["restrained", false]) && !(player GVAR ["surrender", false]) && ("ItemRadio" in assignedItems player)) then
+					{
+						createDialog "Life_cell_phone"; 
+					};
+				};
+    };
+	
     //T Key (Trunk)
     case 20: {
         if (!_alt && !_ctrlKey && !dialog && {!life_action_inUse}) then {
