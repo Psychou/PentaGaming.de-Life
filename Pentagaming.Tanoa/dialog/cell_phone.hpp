@@ -6,15 +6,20 @@ class Life_cell_phone {
     onLoad = "[] spawn life_fnc_cellphone";
 
     class controlsBackground {
-        class Life_RscTitleBackground: Life_RscText {
-            colorBackground[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
-            idc = -1;
-            x = 0.1;
-            y = 0.2;
-            w = 0.64;
-            h = (1 / 25);
-        };
-
+ 
+		
+		class EXphone : Life_RscPicture 
+		{
+			idc = 3001;
+			text = "textures\phone.paa";
+			x = 0.384999;
+			y = -0.00433818;
+			w = 0.8125;
+			h = 1.03676;
+		};
+	
+	};
+			
         class MainBackground: Life_RscText {
             colorBackground[] = {0, 0, 0, 0.7};
             idc = -1;
