@@ -6,7 +6,7 @@ class Life_cell_phone {
     onLoad = "[] spawn life_fnc_cellphone";
 
     class controlsBackground {
- 
+
 		
 		class EXphone : Life_RscPicture 
 		{
@@ -20,16 +20,6 @@ class Life_cell_phone {
 	
 	};
 			
-        class MainBackground: Life_RscText {
-            colorBackground[] = {0, 0, 0, 0.7};
-            idc = -1;
-            x = 0.1;
-            y = 0.2 + (11 / 250);
-            w = 0.64;
-            h = 0.3 - (5 / 250);
-        };
-    };
-
     class controls {
         class Title: Life_RscTitle {
             colorBackground[] = {0, 0, 0, 0};
