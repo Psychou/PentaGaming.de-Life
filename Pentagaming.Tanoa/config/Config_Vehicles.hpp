@@ -95,7 +95,7 @@ class CarShops {
         };
     };
 	
-    class reb_air_ {
+    class reb_air {
         side = "civ";
         conditions = "";
         vehicles[] = {
