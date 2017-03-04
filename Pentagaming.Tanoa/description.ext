@@ -63,10 +63,45 @@ class CfgSounds {
         sound[] = {"\sounds\harvest.ogg", 1.0, 1};
         titles[] = {};
     };
+	
+	class pickaxe
+	{
+		name = "pickaxe";
+		sound[] = {"\sounds\pickaxe.ogg", 0.75, 1};
+		titles[] = {};
+	};
+	
+	class revive
+	{
+	  name = "revive";
+	  sound[] = {"\sounds\revive.ogg", 1,1};
+	  titles[] = {};
+	};
+	
+	class intro
+	{
+		name = "intro"; 
+		sound[] = {"\sounds\intro.ogg", 1.25, 1}; 
+		titles[] = {};
+	};
+	
+	class handcuffs
+	{
+		name = "handcuffs";
+		sound[] = {"\sounds\handcuffs.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class unhandcuffs
+	{
+		name = "unhandcuffs";
+		sound[] = {"\sounds\unhandcuffs.ogg", 1.0, 1};
+		titles[] = {};
+	};
 
     class lockCarSound {
         name = "lockCarSound";
-        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
+        sound[] = {"\sounds\car_lock.ogg", 0.25, 1};
         titles[] = {};
     };
 

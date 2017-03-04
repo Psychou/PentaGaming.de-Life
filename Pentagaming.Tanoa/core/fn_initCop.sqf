@@ -26,3 +26,28 @@ player setVariable ["rank",(FETCH_CONST(life_coplevel)),true];
 [] call life_fnc_spawnMenu;
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
+
+
+//Introcam
+[] spawn life_fnc_IntroCam;
+[] spawn
+{
+	while{true} do
+	{
+		
+		switch (FETCH_CONST(life_coplevel)) do
+        {
+            case 1:
+            {
+                waitUntil {uniform player == "U_Rangemaster"};
+                player setObjectTextureGlobal [0,"textures\cadet.paa"];
+            };
+            default
+            {
+				waitUntil {uniform player == "U_Rangemaster"};
+                player setObjectTextureGlobal [0,"textures\PoliceOfficer.paa"];
+            };
+        };
+		sleep 40;
+	};
+};
