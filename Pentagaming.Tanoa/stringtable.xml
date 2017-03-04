@@ -10750,16 +10750,16 @@
             <Portuguese>North Western Rebel Base</Portuguese>
             <Polish>North Western Rebel Base</Polish>
         </Key>
-        <Key ID="STR_SP_Reb_NE">
-            <Original>North Eastern Rebel Base</Original>
-            <Czech>North Eastern Rebel Base</Czech>
-            <Spanish>North Eastern Rebel Base</Spanish>
-            <Russian>North Eastern Rebel Base</Russian>
-            <German>Nord-Ost Rebellen Basis</German>
-            <French>North Eastern Rebel Base</French>
-            <Italian>North Eastern Rebel Base</Italian>
-            <Portuguese>North Eastern Rebel Base</Portuguese>
-            <Polish>North Eastern Rebel Base</Polish>
+        <Key ID="STR_MAR_Rebel_Island">
+            <Original>Rebel Island</Original>
+            <Czech>Rebel Island</Czech>
+            <Spanish>Rebel Island</Spanish>
+            <Russian>Rebel Island</Russian>
+            <German>Rebellen Insel</German>
+            <French>Rebel Island</French>
+            <Italian>Rebel Island</Italian>
+            <Portuguese>Rebel Island</Portuguese>
+            <Polish>Rebel Island</Polish>
         </Key>
         <Key ID="STR_SP_EMS_Kav">
             <Original>Kavala Hospital</Original>
