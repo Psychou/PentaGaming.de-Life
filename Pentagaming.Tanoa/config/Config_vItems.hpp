@@ -189,8 +189,8 @@ class VirtualItems {
         icon = "icons\ico_fuelEmpty.paa";
     };
 
-    class fuelEmpty {
-        variable = "fuelEmpty";
+    class fuelFull {
+        variable = "fuelFull";
         displayName = "STR_Item_FuelF";
         weight = 5;
         buyPrice = 850;
