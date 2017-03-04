@@ -94,6 +94,15 @@ class CarShops {
             { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
         };
     };
+	
+    class reb_air_ {
+        side = "civ";
+        conditions = "";
+        vehicles[] = {
+            { "B_Heli_Light_01_F", "" },
+            { "O_Heli_Light_02_unarmed_F", "" }
+        };
+    };
 
     class med_shop {
         side = "med";
