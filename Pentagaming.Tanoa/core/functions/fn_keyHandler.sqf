@@ -210,7 +210,7 @@ switch (_code) do {
 	//Hallo!
 	case 15: 
 	{
-		if(!(player GVAR ["restrained", false]) && !(player GVAR ["surrender", false]) && (alive player)) then
+		if(!(player getVariable ["restrained", false]) && !(player getVariable ["surrender", false]) && (alive player)) then
 		{
 			cutText [format["Servus!"], "PLAIN DOWN"];
 			player playActionNow "gestureHi";
