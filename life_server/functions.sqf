@@ -229,6 +229,23 @@ compileFinal "
     ctrlShow[3021,true];
 ";
 
+//Polizei Rundfunk
+TON_fnc_cell_coptoall =
+compileFinal "
+	private[""_msg"",""_to""];
+	ctrlShow[3023,false];
+	_msg = ctrlText 3003;
+	_to = ""Bürgerinnen und Bürger"";
+	if(isServer) exitWith {};
+	if((call life_coplevel) < 3) exitWith {hint ""Du hast nicht den benötigten Rang!"";};
+	private[""_msg"",""_from""];
+	if(_msg == """") exitWith {hint ""Du hast keine Nachricht eingegeben!"";};
+	
+	[[_msg,name player,6],""TON_fnc_clientMessage"",true,false] call life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""Polizei benachrichtigung an alle: %1"",_msg];
+";
+
 publicVariable "TON_fnc_cell_textmsg";
 publicVariable "TON_fnc_cell_textcop";
 publicVariable "TON_fnc_cell_textadmin";
@@ -319,7 +336,17 @@ compileFinal "
 
             [""TextMessage"",[format [""EMS Request from %1"",_from]]] call bis_fnc_showNotification;
         };
-    };
+		case 6 :
+		{
+			if(side player != civilian) exitWith {};
+			private[""_message""];
+			_message = format[""Polizeimeldung des Staates Altis von %1: %2"",_from,_msg];
+			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Neue Polizeianweisung<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Bürger<br/><t color='#33CC33'>Von: <t color='#ffffff'>WHE Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			
+			[""Polizeimeldung"",[format[""Neue Polizeimeldung von: %1"",_from]]] call bis_fnc_showNotification;
+			systemChat _message;
+		};
+	};
 ";
 publicVariable "TON_fnc_clientMessage";
 

@@ -1,17 +1,15 @@
 /*
 	File: welcome.sqf
-	Author: TheTotenkopf
-	Date: 26.6.2014
+	Author: ZedBuster
+	Link: opendayz.net/threads/dayz-welcome-message-credits-style.13071/
 */
 
 //Start erst nach Spawn
 waitUntil{ !isNull(findDisplay 38500)};
 waitUntil{ isNull(findDisplay 38500)};
 
-//Sound
-
-sleep 50;
-_onScreenTime = 1.5;
+sleep 10;
+_onScreenTime = 3;
 
 _role1 = "Willkommen bei";
 _role1names = ["PentaGaming.de"];
@@ -21,10 +19,10 @@ _role3 = "Map Edit by";
 _role3names = ["NU Team"];
 _role4 = "Offizieller TeamSpeak";
 _role4names = ["pentagaming.de"];
-_role8 = "Offizielles Forum";
-_role8names = ["http://forum.penta-gaming.de/"];
- _role9 = "Server Restarts";
-_role9names = ["0,4,8,12,16,20,24"];
+_role5 = "Offizielles Forum";
+_role5names = ["http://forum.penta-gaming.de/"];
+ _role6 = "Server Restarts";
+_role6names = ["0,4,8,12,16,20,24"];
 
 {
 sleep 2;
@@ -49,6 +47,6 @@ sleep (_onScreenTime);
 [_role2, _role2names],
 [_role3, _role3names],
 [_role4, _role4names],
-[_role8, _role8names],
-[_role9, _role9names]
+[_role5, _role5names],
+[_role6, _role6names]
 ];
