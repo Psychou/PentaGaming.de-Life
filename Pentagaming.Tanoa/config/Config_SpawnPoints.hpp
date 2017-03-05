@@ -139,20 +139,20 @@ class CfgSpawnPoints {
                 conditions = "";
             };
 
-            class Tuvanaka {
-                displayName = "Tuvanaka";
-                spawnMarker = "civ_spawn_2";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "";
-            };
-
             class Lijnhaven {
                 displayName = "Lijnhaven";
                 spawnMarker = "civ_spawn_4";
                 icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
                 conditions = "";
             };
-
+			
+            class RebelIsland {
+                displayName = "Tuvanaka";
+                spawnMarker = "reb_spawn_2";
+                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+                conditions = "license_civ_rebel";
+            };
+			
             class RebelNW {
                 displayName = $STR_SP_Reb_NW;
                 spawnMarker = "Rebelop";
@@ -167,8 +167,8 @@ class CfgSpawnPoints {
                 conditions = "license_civ_rebel";
             };
 
-            class RebelNE {
-                displayName = $STR_SP_Reb_NE;
+            class RebelAir {
+                displayName = "Rebel Airport";
                 spawnMarker = "Rebelop_2";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
