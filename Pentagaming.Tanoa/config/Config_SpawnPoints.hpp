@@ -149,17 +149,10 @@ class CfgSpawnPoints {
             class RebelIsland {
                 displayName = "Tuvanaka";
                 spawnMarker = "reb_spawn_2";
-                icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
-                conditions = "license_civ_rebel";
-            };
-			
-            class RebelNW {
-                displayName = $STR_SP_Reb_NW;
-                spawnMarker = "Rebelop";
                 icon = "\a3\ui_f\data\map\MapControl\bunker_ca.paa";
                 conditions = "license_civ_rebel";
             };
-
+			
             class RebelS {
                 displayName = $STR_SP_Reb_S;
                 spawnMarker = "Rebelop_1";
