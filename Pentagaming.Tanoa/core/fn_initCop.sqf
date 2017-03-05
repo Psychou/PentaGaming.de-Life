@@ -51,3 +51,42 @@ waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done
 		sleep 40;
 	};
 };
+
+[] spawn
+{
+	while {true} do
+    {
+		if(playerSide == west) then
+		{
+        waitUntil {uniform player == "U_B_CombatUniform_mcam"};
+        player setObjectTextureGlobal [0,"textures\swat_shirt.paa"];
+		};
+	sleep 40;
+    };
+};
+
+[] spawn
+{
+	while {true} do
+    {
+		if(playerSide == west) then
+		{
+        waitUntil {uniform player == "U_Competitor"};
+        player setObjectTextureGlobal [0,"textures\lt_2.paa"];
+		};
+	sleep 40;
+    };
+};
+
+[] spawn
+{
+	while {true} do
+    {
+		if(playerSide == west) then
+		{
+       	waitUntil {uniform player == "U_Marshal"};
+        player setObjectTextureGlobal [0,"textures\lt_1.paa"];
+		};
+	sleep 40;
+    };
+};
