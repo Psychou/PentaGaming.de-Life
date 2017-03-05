@@ -213,7 +213,7 @@ compileFinal "
     hint format [localize ""STR_CELLMSG_AdminToPerson"",name _to,_msg];
     ctrlShow[3020,true];
 ";
-//Admin To All
+
 TON_fnc_cell_adminmsgall =
 compileFinal "
     if (isServer) exitWith {};
@@ -232,17 +232,18 @@ compileFinal "
 //Polizei Rundfunk
 TON_fnc_cell_coptoall =
 compileFinal "
-    if (isServer) exitWith {};
-    if ((call life_coplevel) < 3) exitWith {hint ""Du hast nicht den benötigten Rang!"";};
-    private [""_msg"",""_from""];
-    ctrlShow[3021,false];
-    _msg = ctrlText 3003;
-    if (_msg isEqualTo """") exitWith {hint localize ""STR_CELLMSG_EnterMSG"";ctrlShow[3021,true];};
-
-    [_msg,name player,4] remoteExecCall [""TON_fnc_clientMessage"",-2];
-    [] call life_fnc_cellphone;
-    hint format [""Polizei benachrichtigung an alle: %1"",_msg];
-    ctrlShow[3021,true];
+	private[""_msg"",""_to""];
+	ctrlShow[3023,false];
+	_msg = ctrlText 3003;
+	_to = ""Bürgerinnen und Bürger"";
+	if(isServer) exitWith {};
+	if((call life_coplevel) < 3) exitWith {hint ""Du hast nicht den benötigten Rang!"";};
+	private[""_msg"",""_from""];
+	if(_msg == """") exitWith {hint ""Du hast keine Nachricht eingegeben!"";};
+	
+	[[_msg,name player,6],""TON_fnc_clientMessage"",true,false] call life_fnc_MP;
+	[] call life_fnc_cellphone;
+	hint format[""Polizei benachrichtigung an alle: %1"",_msg];
 ";
 
 publicVariable "TON_fnc_cell_textmsg";
@@ -251,7 +252,6 @@ publicVariable "TON_fnc_cell_textadmin";
 publicVariable "TON_fnc_cell_adminmsg";
 publicVariable "TON_fnc_cell_adminmsgall";
 publicVariable "TON_fnc_cell_emsrequest";
-publicVariable "TON_fnc_cell_coptoall"
 //Client Message
 /*
     0 = private message
@@ -341,7 +341,7 @@ compileFinal "
 			if(side player != civilian) exitWith {};
 			private[""_message""];
 			_message = format[""Polizeimeldung des Staates Altis von %1: %2"",_from,_msg];
-			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Neue Polizeianweisung<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Bürger<br/><t color='#33CC33'>Von: <t color='#ffffff'>NU Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
+			hint parseText format [""<t color='#316dff'><t size='2'><t align='center'>Neue Polizeianweisung<br/><br/><t color='#33CC33'><t align='left'><t size='1'>An: <t color='#ffffff'>Alle Bürger<br/><t color='#33CC33'>Von: <t color='#ffffff'>WHE Polizei<br/><br/><t color='#33CC33'>Nachricht:<br/><t color='#ffffff'>%1"",_msg];
 			
 			[""Polizeimeldung"",[format[""Neue Polizeimeldung von: %1"",_from]]] call bis_fnc_showNotification;
 			systemChat _message;
