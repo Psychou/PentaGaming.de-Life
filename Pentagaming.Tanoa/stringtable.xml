@@ -2779,7 +2779,7 @@
             <Czech>Dejte Ticket</Czech>
             <Spanish>Dar Tiquete</Spanish>
             <Russian></Russian>
-            <German>Ticket geben</German>
+            <German>Ticket Geben</German>
             <French>Verbaliser</French>
             <Italian>Dai Multa</Italian>
             <Portuguese>Dar Multa</Portuguese>
@@ -2790,7 +2790,7 @@
             <Czech>Pay vstupenek</Czech>
             <Spanish>Pagar Tiquete</Spanish>
             <Russian></Russian>
-            <German>Ticket bezahlen</German>
+            <German>Bezahlen</German>
             <French>Payer l'amende</French>
             <Italian>Paga Multa</Italian>
             <Portuguese>Pagar Multa</Portuguese>
@@ -2801,7 +2801,7 @@
             <Czech>odmítnout Ticket</Czech>
             <Spanish>Denegar Tiquete</Spanish>
             <Russian></Russian>
-            <German>Ticket ablehnen</German>
+            <German>Verweigern</German>
             <French>Contester l'amende</French>
             <Italian>Rifiuta Multa</Italian>
             <Portuguese>Recusar Multa</Portuguese>
@@ -3117,7 +3117,7 @@
             <Czech>%1 byl zatčen%2</Czech>
             <Spanish>%1 fue arrestado por %2</Spanish>
             <Russian></Russian>
-            <German>%1 wurde von %2 verhaftet.</German>
+            <German>%1 Wurde in die JVA Tanoa gesteckt.</German>
             <French>%1 a été arrêté par %2</French>
             <Italian>%1 è stato arrestato da %2</Italian>
             <Portuguese>%1 foi preso por %2</Portuguese>
@@ -7047,6 +7047,17 @@
             <Italian>Licenza Guardia Costiera</Italian>
             <Portuguese>Licença da Guarda Costeira</Portuguese>
             <Polish>Trening straż przybrzeżna</Polish>
+        </Key>
+		<Key ID="STR_License_swat">
+            <Original>S.W.A.T. Beamter</Original>
+            <Czech>S.W.A.T. Beamter</Czech>
+            <Spanish>S.W.A.T. Beamter</Spanish>
+            <Russian>S.W.A.T. Beamter</Russian>
+            <German>S.W.A.T. Beamter</German>
+            <French>S.W.A.T. Beamter</French>
+            <Italian>S.W.A.T. Beamter</Italian>
+            <Portuguese>S.W.A.T. Beamter</Portuguese>
+            <Polish>S.W.A.T. Beamter</Polish>
         </Key>
         <Key ID="STR_License_Rebel">
             <Original>Rebel Training</Original>

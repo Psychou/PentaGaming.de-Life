@@ -10,28 +10,28 @@ class Licenses {
 	//Team Licenses
 	class Team {
 	    variable = "Team";
-		displayName = "STR_License_Team";
+		displayName = "NameUnknown.de Team";
 		price = "";
 		illegal = false;
 		side = "civ";
 	};
     class Team_Leitung {
 	    variable = "TeamLeitung";
-		displayName = "STR_License_TeamLeitung";
+		displayName = "NameUnknown.de Projektleitung";
 		price = "";
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Admin {
 	    variable = "TeamAdmin";
-		displayName = "STR_License_TeamAdmin";
+		displayName = "NameUnknown.de Admin";
 		price = "";
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Supp {
 	    variable = "TeamSupp";
-		displayName = "STR_License_TeamSupp";
+		displayName = "NameUnknown.de Supporter";
 		price = "";
 		illegal = false;
 		side = "civ";
@@ -205,6 +205,14 @@ class Licenses {
         variable = "cg";
         displayName = "STR_License_CG";
         price = 8000;
+        illegal = false;
+        side = "cop";
+    };
+	
+	class swat {
+        variable = "swat";
+        displayName = "STR_License_swat";
+        price = "";
         illegal = false;
         side = "cop";
     };

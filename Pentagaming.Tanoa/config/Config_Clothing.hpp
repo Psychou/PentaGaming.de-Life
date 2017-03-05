@@ -150,21 +150,18 @@ class Clothing {
         uniforms[] = {
             { "NONE", $STR_C_Remove_uniforms, 0, "" },
             { "U_Rangemaster", $STR_C_Cop_uniforms, 25, "" },
-            { "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
-            { "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
-            { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" }
+            { "U_B_Wetsuit", "Taucheranzug", 350, "call life_coplevel >= 1" },
+            { "U_Competitor", "", 550, "call life_coplevel >= 5" },
+            { "U_Marshal", "", 1250, "call life_coplevel >= 5" }
         };
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Cap_police", "", 25, "" },
-            { "H_Booniehat_mcamo", "", 120, "call life_coplevel >= 1" },
-            { "H_HelmetB_plain_mcamo", "", 75, "call life_coplevel >= 1" },
-            { "H_HelmetB_Enh_tna_F", "", 80, "call life_coplevel >= 1" }, //Apex DLC
-            { "H_Beret_blk_POLICE", "", 50, "call life_coplevel >= 2" },
-            { "H_MilCap_mcamo", "", 100, "call life_coplevel >= 2" },
-            { "H_MilCap_gen_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
-            { "H_MilCap_tna_F", "", 1200, "call life_coplevel >= 2" }, //Apex DLC
-            { "H_MilCap_oucamo", "", 1200, "call life_coplevel >= 2" }
+            { "H_Beret_blk_POLICE "", 120, "call life_coplevel >= 1" },
+            { "H_Watchcap_sgg", "", 75, "call life_coplevel >= 3" },
+            { "H_Beret_02", "", 80, "call life_coplevel >= 5" },
+            { "H_PilotHelmetHeli_B", "", 50, "call life_coplevel >= 5" },
+            { "H_CrewHelmetHeli_B", "", 100, "call life_coplevel >= 5" }
         };
         goggles[] = {
             { "NONE", $STR_C_Remove_goggles, 0, "" },
@@ -186,9 +183,63 @@ class Clothing {
             { "NONE", $STR_C_Remove_vests, 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" }, //Apex DLC
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" }
+            { "V_RebreatherB", "", 1000, "call life_coplevel >= 1" },
+			{ "V_PlateCarrier1_blk", "", 1000, "call life_coplevel >= 9" },
+			{ "V_PlateCarrierSpec_blk", "", 1000, "call life_coplevel >= 9" }
+        backpacks[] = {
+            { "NONE", $STR_C_Remove_backpacks, 0, "" },
+            { "B_FieldPack_cbr", "", 500, "" },
+            { "B_AssaultPack_cbr", "", 700, "" },
+            { "B_Kitbag_cbr", "", 800, "" },
+            { "B_Bergen_sgg", "", 2500, "" },
+            { "B_Carryall_cbr", "", 3500, "" }
         };
+    };
+	
+	class cop_swat {
+        title = "STR_Shops_C_Police";
+        conditions = "license_cop_swat";
+        side = "cop";
+        uniforms[] = {
+            { "NONE", $STR_C_Remove_uniforms, 0, "" },
+            { "U_B_CombatUniform_mcam", $STR_C_Cop_uniforms, 25, "" },
+            { "U_B_GhillieSuit", "", 350, "call life_coplevel >= 1" }
+        };
+        headgear[] = {
+            { "NONE", $STR_C_Remove_headgear, 0, "" },
+            { "H_Cap_police", "", 25, "" },
+            { "H_Beret_blk_POLICE "", 120, "call life_coplevel >= 1" },
+            { "H_Watchcap_sgg", "", 75, "call life_coplevel >= 3" },
+            { "H_Beret_02", "", 80, "call life_coplevel >= 5" },
+            { "H_PilotHelmetHeli_B", "", 50, "call life_coplevel >= 5" },
+            { "H_CrewHelmetHeli_B", "", 100, "call life_coplevel >= 5" },
+            { "H_Cap_headphones", "", 1200, "call life_coplevel >= 10" },
+            { "H_HelmetB_light_black", "", 1200, "call life_coplevel >= 9" },
+            { "H_Beret_Colonel", "", 1200, "call life_coplevel >= 9" }
+        };
+        goggles[] = {
+            { "NONE", $STR_C_Remove_goggles, 0, "" },
+            { "G_Squares", "", 10, "" },
+            { "G_Shades_Blue", "", 20, "" },
+            { "G_Sport_Blackred", "", 20, "" },
+            { "G_Sport_Checkered", "", 20, "" },
+            { "G_Sport_Blackyellow", "", 20, "" },
+            { "G_Sport_BlackWhite", "", 20, "" },
+            { "G_Shades_Black", "", 25, "" },
+            { "G_Lowprofile", "", 30, "" },
+            { "G_Combat", "", 55, "" },
+            { "G_Aviator", "", 100, "" },
+            { "G_Lady_Mirror", "", 150, "" },
+            { "G_Lady_Dark", "", 150, "" },
+            { "G_Lady_Blue", "", 150, "" }
+        };
+        vests[] = {
+            { "NONE", $STR_C_Remove_vests, 0, "" },
+            { "V_Rangemaster_belt", "", 800, "" },
+            { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
+            { "V_RebreatherB", "", 1000, "call life_coplevel >= 1" },
+			{ "V_PlateCarrier1_blk", "", 1000, "call life_coplevel >= 9" },
+			{ "V_PlateCarrierSpec_blk", "", 1000, "call life_coplevel >= 9" }
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
             { "B_FieldPack_cbr", "", 500, "" },
