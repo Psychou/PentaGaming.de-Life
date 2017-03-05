@@ -196,6 +196,27 @@ switch (_code) do {
         };
     };
 
+	// O, gate opener
+        case 24:
+    {
+
+        if(playerSide in [west,independent,east] && vehicle 
+		player != player && ((driver vehicle player) == player)) then 
+        {
+            [] call life_fnc_Opener;
+        };
+    };
+	
+	//Hallo!
+	case 15: 
+	{
+		if(!(player GVAR ["restrained", false]) && !(player GVAR ["surrender", false]) && (alive player)) then
+		{
+			cutText [format["Servus!"], "PLAIN DOWN"];
+			player playActionNow "gestureHi";
+		};
+	};
+	
     //F Key
     case 33: {
         if (playerSide in [west,independent] && {vehicle player != player} && {!life_siren_active} && {((driver vehicle player) == player)}) then {
@@ -222,8 +243,64 @@ switch (_code) do {
         };
     };
 
-    //O Key
-    case 24: {
+	//Takwondo(Traditional Martial arts in korea)(Shift + Num 1)
+	case 79:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Takwondo"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
+			};
+	};
+	
+	//Kneebend Slow(Shift + Num 2)
+	case 80:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Kniebeugen langsam"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
+			};
+	};	
+
+	//Kneebend Fast(Shift + Num 3)
+	case 81:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Kniebeugen schnell"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
+			};
+	};
+	
+	//Pushup(Shift + Num 4)
+	case 75:
+	{
+		if(_shift) then {_handled = true;};
+			if ((_shift) && (vehicle player == player)) then
+			{
+				cutText [format["Liegestütze"], "PLAIN DOWN"];
+				player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
+			};
+	};
+
+
+	// ANTI ALT + F4
+	case 62: {
+		if(_alt) then 
+			{
+				[[1,format["%1 hat ALT+F4 gedrueckt!",profileName]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+				titleText["Alt + F4 wird dir da auch nicht helfen ;)","PLAIN"];
+				diag_log format ["Server: %1 hat Alt+F4 gedrueckt !",_player getVariable["realname",name _player]];
+			};
+	};
+
+	
+    //Shift + P Key
+    case 25: {
         if (_shift) then {
             if !(soundVolume isEqualTo 1) then {
                 1 fadeSound 1;
