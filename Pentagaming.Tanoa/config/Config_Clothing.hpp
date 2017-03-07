@@ -157,7 +157,7 @@ class Clothing {
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Cap_police", "", 25, "" },
-            { "H_Beret_blk_POLICE "", 120, "call life_coplevel >= 1" },
+            { "H_Beret_blk_POLICE","", 120, "call life_coplevel >= 1" },
             { "H_Watchcap_sgg", "", 75, "call life_coplevel >= 3" },
             { "H_Beret_02", "", 80, "call life_coplevel >= 5" },
             { "H_PilotHelmetHeli_B", "", 50, "call life_coplevel >= 5" },
@@ -186,6 +186,7 @@ class Clothing {
             { "V_RebreatherB", "", 1000, "call life_coplevel >= 1" },
 			{ "V_PlateCarrier1_blk", "", 1000, "call life_coplevel >= 9" },
 			{ "V_PlateCarrierSpec_blk", "", 1000, "call life_coplevel >= 9" }
+		};
         backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
             { "B_FieldPack_cbr", "", 500, "" },
@@ -240,7 +241,8 @@ class Clothing {
             { "V_RebreatherB", "", 1000, "call life_coplevel >= 1" },
 			{ "V_PlateCarrier1_blk", "", 1000, "call life_coplevel >= 9" },
 			{ "V_PlateCarrierSpec_blk", "", 1000, "call life_coplevel >= 9" }
-        backpacks[] = {
+		};
+		backpacks[] = {
             { "NONE", $STR_C_Remove_backpacks, 0, "" },
             { "B_FieldPack_cbr", "", 500, "" },
             { "B_AssaultPack_cbr", "", 700, "" },
