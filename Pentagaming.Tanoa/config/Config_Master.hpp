@@ -68,7 +68,7 @@ class Life_Settings {
     escapeMenu_displayText = "Besuche uns bald wieder!"; //Text displayed in the escape menu. Make it short.. around 20 characters.
 
     /* Fuel System Configurations */
-    pump_service = false; //Allow users to use pump service on the map. Default = false
+    pump_service = true; //Allow users to use pump service on the map. Default = false
     fuel_cost = 70; //Cost of fuel per liter at fuel stations (if not defined for the vehicle already).
     service_chopper = 1000; //Cost to service chopper at chopper service station(Repair/Refuel).
     fuelCan_refuel = 250; //Cost to refuel an empty fuel canister at the fuel station pumps. (Be wary of your buy/sell prices on fuel cans to prevent exploits...)
