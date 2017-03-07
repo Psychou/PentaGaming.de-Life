@@ -43,14 +43,22 @@ private _index = -1;
                 _text = switch (true) do {
                     case (_x in (units group player) && playerSide isEqualTo civilian): {format ["<t color='#00FF00'>%1</t>",(_x getVariable ["realname",name _x])];};
                     case (side _x isEqualTo west && {!isNil {_x getVariable "rank"}}): {format ["<img image='%1' size='1'></img> %2",switch ((_x getVariable "rank")) do {
-                        case 2: {"\a3\ui_f\data\gui\cfg\Ranks\corporal_gs.paa"};
-                        case 3: {"\a3\ui_f\data\gui\cfg\Ranks\sergeant_gs.paa"};
-                        case 4: {"\a3\ui_f\data\gui\cfg\Ranks\lieutenant_gs.paa"};
-                        case 5: {"\a3\ui_f\data\gui\cfg\Ranks\captain_gs.paa"};
-                        case 6: {"\a3\ui_f\data\gui\cfg\Ranks\major_gs.paa"};
-                        case 7: {"\a3\ui_f\data\gui\cfg\Ranks\colonel_gs.paa"};
-                        case 8: {"\a3\ui_f\data\gui\cfg\Ranks\general_gs.paa"};
-                        default {"\a3\ui_f\data\gui\cfg\Ranks\private_gs.paa"};
+                        case 2: {"textures\cop\Officer.paa"};
+                        case 3: {"textures\cop\Detective.paa"};
+                        case 4: {"textures\cop\Sergeant.paa"};
+                        case 5: {"textures\cop\StaffSergeant.paa"};
+                        case 6: {"textures\cop\SergeantFC.paa"};
+                        case 7: {"textures\cop\MasterSergeant.paa"};
+                        case 8: {"textures\cop\SecondLieutnant.paa"};
+						case 9: {"textures\cop\FirstLieutnant.paa"};
+						case 10: {"textures\cop\Captain.paa"};
+						case 11: {"textures\cop\Major.paa"};
+						case 12: {"textures\cop\Colonel.paa"};
+						case 13: {"textures\cop\supervisor.paa"};
+						case 14: {"textures\cop\Instructor.paa"};
+						case 15: {"textures\cop\assistant.paa"};
+						case 16: {"textures\cop\cop.paa"};
+                        default {"textures\cop\Private.paa"};
                         },_x getVariable ["realname",name _x]]};
                     case (side _x isEqualTo independent): {format ["<t color='#FF0000'><img image='a3\ui_f\data\map\MapControl\hospital_ca.paa' size='1.5'></img></t> %1",_x getVariable ["realname",name _x]]};
                     default {
