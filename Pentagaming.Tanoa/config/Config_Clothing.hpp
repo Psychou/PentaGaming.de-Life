@@ -209,7 +209,7 @@ class Clothing {
         headgear[] = {
             { "NONE", $STR_C_Remove_headgear, 0, "" },
             { "H_Cap_police", "", 25, "" },
-            { "H_Beret_blk_POLICE "", 120, "call life_coplevel >= 1" },
+            { "H_Beret_blk_POLICE", 120, "call life_coplevel >= 1" },
             { "H_Watchcap_sgg", "", 75, "call life_coplevel >= 3" },
             { "H_Beret_02", "", 80, "call life_coplevel >= 5" },
             { "H_PilotHelmetHeli_B", "", 50, "call life_coplevel >= 5" },
