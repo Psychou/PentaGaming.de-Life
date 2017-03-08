@@ -211,7 +211,7 @@ class Licenses {
 	
 	class swat {
         variable = "swat";
-        displayName = "STR_License_swat";
+        displayName = "S.W.A.T Beamter";
         price = "";
         illegal = false;
         side = "cop";
