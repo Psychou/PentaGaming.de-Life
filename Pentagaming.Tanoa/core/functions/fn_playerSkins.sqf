@@ -45,6 +45,9 @@ switch (playerSide) do {
             };
             player setObjectTextureGlobal [0, _skinName];
         };
+		if (backpack player != "") then {
+		unitBackpack player setObjectTextureGlobal [0,""];
+		};
     };
 
     case independent: {
