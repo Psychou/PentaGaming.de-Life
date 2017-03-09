@@ -104,18 +104,29 @@ class CarShops {
         };
     };
 
-    class med_shop {
+    class med_cars {
         side = "med";
         conditions = "";
         vehicles[] = {
             { "C_Offroad_01_F", "" },
-            { "I_Truck_02_medical_F", "" },
-            { "O_Truck_03_medical_F", "" },
-            { "B_Truck_01_medical_F", "" }
+            {  },
+            {  },
+            {  }
         };
     };
 
-    class med_air_hs {
+    class med_air {
+        side = "med";
+        conditions = "";
+        vehicles[] = {
+            { "B_Heli_Light_01_F", "" },
+            { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 4" },
+			{ "B_T_VTOL_01_infantry_blue_F", "call life_mediclevel >= 6"},
+			{ "B_Heli_Transport_03_unarmed_F", "call life_mediclevel >= 7"}
+        };
+    };
+
+	class med_boat {
         side = "med";
         conditions = "";
         vehicles[] = {
@@ -123,7 +134,6 @@ class CarShops {
             { "O_Heli_Light_02_unarmed_F", "" }
         };
     };
-
     class cop_car {
         side = "cop";
         conditions = "";
@@ -234,6 +244,18 @@ class LifeCfgVehicles {
     };
 
     // Apex DLC
+	class B_T_VTOL_01_infantry_blue_F {
+		vItemSpace = 600;
+		conditions = "license_med_mAir"
+		price = 100000;
+		textures[] = {};
+	};
+	class B_Heli_Transport_03_unarmed_F {
+		vItemSpace = 200;
+		conditions = "license_med_mAir || license_civ_pilot"
+		price = 100000;
+		textures[] = {};
+	};
     class C_Plane_Civil_01_F {
         vItemSpace = 75;
         conditions = "license_civ_pilot || {!(playerSide isEqualTo civilian)}";
