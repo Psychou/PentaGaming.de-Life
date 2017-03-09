@@ -178,7 +178,7 @@ class CfgSpawnPoints {
 
             class SWAirport {
                 displayName = $STR_SP_Cop_Air_SW;
-                spawnMarker = "cop_spawn_3";
+                spawnMarker = "cop_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\fuelstation_ca.paa";
                 conditions = "";
             };
@@ -209,7 +209,7 @@ class CfgSpawnPoints {
 
             class AirHQ {
                 displayName = "Medic Air HQ";
-                spawnMarker = "medic_spawn_1";
+                spawnMarker = "medic_spawn";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
@@ -222,15 +222,22 @@ class CfgSpawnPoints {
             };
 
             class NEAirportHospital {
-                displayName = $STR_SP_EMS_NEair;
-                spawnMarker = "medic_spawn_3";
+                displayName = "Medic Airport";
+                spawnMarker = "medic_spawn_";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
-			           
+
 			class NAirportHospital {
                 displayName = "Medic Air HQ Nord";
                 spawnMarker = "medic_spawn_4";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+			
+			class GeorgetownHQ {
+                displayName = "Georgetown HQ";
+                spawnMarker = "medic_spawn_5";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
