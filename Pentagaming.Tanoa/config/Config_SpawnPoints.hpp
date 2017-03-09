@@ -207,15 +207,15 @@ class CfgSpawnPoints {
 
         class Medic {
 
-            class SEHospital {
-                displayName = $STR_SP_EMS_SE;
+            class AirHQ {
+                displayName = "Medic Air HQ";
                 spawnMarker = "medic_spawn_1";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
 
-            class TanoukaHospital {
-                displayName = $STR_SP_EMS_Tan;
+            class KatkoulaHospital {
+                displayName = "Katkoula";
                 spawnMarker = "medic_spawn_2";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
@@ -224,6 +224,13 @@ class CfgSpawnPoints {
             class NEAirportHospital {
                 displayName = $STR_SP_EMS_NEair;
                 spawnMarker = "medic_spawn_3";
+                icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
+                conditions = "";
+            };
+			           
+			class NAirportHospital {
+                displayName = "Medic Air HQ Nord";
+                spawnMarker = "medic_spawn_4";
                 icon = "\a3\ui_f\data\map\MapControl\hospital_ca.paa";
                 conditions = "";
             };
