@@ -149,26 +149,25 @@ class WeaponShops {
         side = "cop";
         conditions = "";
         items[] = {
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles_OPFOR", "", 2000, 1000, "" },
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
-            { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" }
+            { "Binocular", "", 150, 1, "" },
+            { "ItemGPS", "", 100, 1, "" },
+            { "FirstAidKit", "", 150, 1, "" },
+            { "NVGoggles_OPFOR", "", 50, 1, "" },
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 200, 1, "" },
+            { "hgun_P07_F", "", 750, 1, "" },
+            { "hgun_P07_khk_F", "", 750, 1, "" }, //Apex DLC
+            { "hgun_Pistol_heavy_01_F", "", 950, 1, "call life_coplevel >= 1" },
+            { "SMG_02_ACO_F", "", 3000, 1, "call life_coplevel >= 2" },
+            { "arifle_MX_F", "", 3000, 1, "call life_coplevel >= 2" },
+            { "arifle_MXC_F", "", 3000, 1, "call life_coplevel >= 3" }
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
-            { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" }
+            { "16Rnd_9x21_Mag", "", 125, 1, "" },
+            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 1, "" },
+            { "11Rnd_45ACP_Mag", "", 130, 1, "call life_coplevel >= 1" },
+            { "30Rnd_65x39_caseless_mag", "", 130, 1, "call life_coplevel >= 2" },
+			{ "30Rnd_556x45_Stanag", "", 130, 1, "call life_coplevel >= 2" },
+            { "30Rnd_9x21_Mag", "", 250, 1, "call life_coplevel >= 2" }
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
@@ -185,30 +184,31 @@ class WeaponShops {
         side = "cop";
         conditions = "license_cop_swat";
         items[] = {
-            { "Binocular", "", 150, 75, "" },
-            { "ItemGPS", "", 100, 50, "" },
-            { "FirstAidKit", "", 150, 75, "" },
-            { "NVGoggles_OPFOR", "", 2000, 1000, "" },
-            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 850, "" },
-            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1000, "" },
-            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 10000, "" },
-            { "hgun_P07_F", "", 7500, 3750, "" },
-            { "hgun_P07_khk_F", "", 7500, 3750, "" }, //Apex DLC
-            { "hgun_Pistol_heavy_01_F", "", 9500, 4750, "call life_coplevel >= 1" },
-            { "SMG_02_ACO_F", "", 30000, 15000, "call life_coplevel >= 2" },
-            { "arifle_MX_F", "", 35000, 17500, "call life_coplevel >= 2" },
-            { "hgun_ACPC2_F", "", 17500, 8750, "call life_coplevel >= 3" },
-            { "arifle_MXC_F", "", 30000, 15000, "call life_coplevel >= 3" },
-            { "srifle_DMR_07_blk_F", "", 32000, 16000, "call life_coplevel >= 3" } //Apex DLC Sniper
+            { "Binocular", "", 150, 1, "" },
+            { "ItemGPS", "", 100, 1, "" },
+            { "FirstAidKit", "", 150, 1, "" },
+            { "NVGoggles_OPFOR", "", 2000, 1, "" },
+            { "HandGrenade_Stone", $STR_W_items_Flashbang, 1700, 1, "" },
+            { "hgun_P07_snds_F", $STR_W_items_StunPistol, 2000, 1, "" },
+            { "arifle_SDAR_F", $STR_W_items_TaserRifle, 20000, 1, "" },
+            { "hgun_P07_F", "", 7500, 1, "" },
+            { "hgun_P07_khk_F", "", 7500, 1, "" }, //Apex DLC
+            { "hgun_Pistol_heavy_01_F", "", 9500, 1, "call life_coplevel >= 1" },
+            { "SMG_02_ACO_F", "", 30000, 1, "call life_coplevel >= 2" },
+            { "arifle_MX_F", "", 35000, 1, "call life_coplevel >= 2" },
+            { "arifle_MXC_F", "", 30000, 1, "call life_coplevel >= 3" },
+			{ "arifle_MX_SW_Black_F", "", 3000, 1, "call life_coplevel >= 3" },
+			{ "srifle_DMR_03_F", "", 3000, 1, "call life_coplevel >= 3" },
+            { "srifle_DMR_07_blk_F", "", 32000, 1, "call life_coplevel >= 3" } //Apex DLC Sniper
         };
         mags[] = {
-            { "16Rnd_9x21_Mag", "", 125, 60, "" },
-            { "20Rnd_556x45_UW_mag", $STR_W_mags_TaserRifle, 125, 60, "" },
-            { "11Rnd_45ACP_Mag", "", 130, 65, "call life_coplevel >= 1" },
-            { "30Rnd_65x39_caseless_mag", "", 130, 65, "call life_coplevel >= 2" },
-            { "30Rnd_9x21_Mag", "", 250, 125, "call life_coplevel >= 2" },
-            { "9Rnd_45ACP_Mag", "", 200, 100, "call life_coplevel >= 3" },
-            { "20Rnd_650x39_Cased_Mag_F", "", 200, 100, "call life_coplevel >= 3" } //Apex DLC
+            { "16Rnd_9x21_Mag", "", 125, 1, "" },
+            { "11Rnd_45ACP_Mag", "", 130, 1, "call life_coplevel >= 1" },
+            { "30Rnd_65x39_caseless_mag", "", 130, 1, "call life_coplevel >= 2" },
+            { "30Rnd_9x21_Mag", "", 250, 1, "call life_coplevel >= 2" },
+			{ "20Rnd_762x51_Mag", "", 200, 1, "call life_coplevel >= 3" },
+			{ "100Rnd_65x39_caseless_mag", "", 200, 1, "call life_coplevel >= 3" },
+            { "20Rnd_650x39_Cased_Mag_F", "", 200, 1, "call life_coplevel >= 3" } //Apex DLC
         };
         accs[] = {
             { "muzzle_snds_L", "", 650, 325, "" },
