@@ -126,14 +126,18 @@ class CarShops {
         };
     };
 
-	class med_boat {
+     class med_ship {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "B_Heli_Light_01_F", "" },
-            { "O_Heli_Light_02_unarmed_F", "" }
+            { "C_Rubberboat", "" },
+            { "C_Boat_Civil_01_F", "" },
+            { "B_SDV_01_F", "" },
+            { "C_Boat_Transport_02_F", "" }, //Apex DLC
+            { "C_Scooter_Transport_01_F", "" } //Apex DLC
         };
     };
+    
     class cop_car {
         side = "cop";
         conditions = "";
@@ -841,7 +845,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
             }, "" },
             { "Rebel Digital", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"
-            }, "" },
+            }, "" }
             { "Digi Green", "reb", {
                 "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_indp_co.paa"
             }, "" },
