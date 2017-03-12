@@ -2,7 +2,7 @@ class CfgGather {
     class Resources {
         class Kokus {
             amount = 5;
-            zones[] = { "Kokus_1", "Kokus_2", "Kokus_3", "Kokus_4", "Kokus_5", "Kokus_6", "Kokus_7", "Kokus_8" };
+            zones[] = { "kokus_1", "kokus_2", "kokus_3", "kokus_4", "kokus_5", "kokus_6", "kokus_7", "kokus_8" };
             item = "";
             zoneSize = 30;
         };

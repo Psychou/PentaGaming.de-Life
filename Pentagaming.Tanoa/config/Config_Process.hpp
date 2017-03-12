@@ -17,6 +17,13 @@
 */
 
 class ProcessAction {
+	calss kokos {
+		MaterialsReq[] = {{"kokosnuss_unprocessed", 1}};
+		MaterialsGive[] = {{"kokosnuss_processed", 2}};
+		Text = "STR_Process_Kokus";
+		//ScrollText = "Process Kokos"
+		NoLicenseCost = 300;
+	};
     class oil {
         MaterialsReq[] = {{"oil_unprocessed",1}};
         MaterialsGive[] = {{"oil_processed",1}};

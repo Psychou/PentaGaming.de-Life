@@ -104,6 +104,13 @@ class Licenses {
     };
 
     //Processing Licenses
+	class kokus {
+		variable = "kokus";
+		displayName = "STR_License_Kokus";
+		price = 5000;
+		illegal = false;
+		side = "civ";
+	};
     class oil {
         variable = "oil";
         displayName = "STR_License_Oil";

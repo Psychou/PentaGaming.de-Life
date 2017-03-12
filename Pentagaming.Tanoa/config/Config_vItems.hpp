@@ -13,28 +13,28 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "pickaxe", "toolkit", "fuelEmpty", "peach", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "toolkit", "fuelFull", "peach", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "toolkit", "fuelFull", "kokosnuss Öl", "defibrillator" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "peach", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "boltcutter", "blastingcharge" };
     };
 
     class wongs {
@@ -125,7 +125,7 @@ class VirtualShops {
         name = "STR_Shops_Cop";
         side = "cop";
         conditions = "";
-        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "apple", "redgull", "toolkit", "fuelEmpty", "defusekit", "defibrillator" };
+        items[] = { "donuts", "coffee", "spikeStrip", "waterBottle", "rabbit", "redgull", "toolkit", "fuelEmpty", "defusekit" };
     };
 };
 

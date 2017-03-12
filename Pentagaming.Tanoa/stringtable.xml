@@ -6936,6 +6936,28 @@
             <Portuguese>Cocaína não Refinada</Portuguese>
             <Polish>Nieoczyszczona kokaina</Polish>
         </Key>
+        <Key ID="STR_Item_kokosnuss_Öl">
+            <Original>kokonut oil</Original>
+            <Czech>kokonut oil</Czech>
+            <Spanish>kokonut oil</Spanish>
+            <Russian></Russian>
+            <German>kokosnuss Öl </German>
+            <French>kokonut oila</French>
+            <Italian>kokonut oil</Italian>
+            <Portuguese>kokonut oil</Portuguese>
+            <Polish>kokonut oil</Polish>
+        </Key>
+        <Key ID="STR_Item_kokosnuss">
+            <Original>kokonut</Original>
+            <Czech>kokonut</Czech>
+            <Spanish>kokonut</Spanish>
+            <Russian></Russian>
+            <German>kokosnuss </German>
+            <French>kokonut</French>
+            <Italian>kokonut</Italian>
+            <Portuguese>kokonut</Portuguese>
+            <Polish>kokonut</Polish>
+        </Key>
         <Key ID="STR_Item_CocaineP">
             <Original>Coke</Original>
             <Czech>Koks</Czech>
@@ -7102,6 +7124,17 @@
             <Italian>Processo Rame</Italian>
             <Portuguese>Processamento de Cobre</Portuguese>
             <Polish>Wytapianie miedzi</Polish>
+        </Key>
+        <Key ID="STR_License_Kokus">
+            <Original>Kokos Processing</Original>
+            <Czech>Kokos Processing</Czech>
+            <Spanish>Kokos Processing</Spanish>
+            <Russian></Russian>
+            <German>Kukosverarbeitung</German>
+            <French>Kokos Processing</French>
+            <Italian>Kokos Processing</Italian>
+            <Portuguese>Kokos Processing</Portuguese>
+            <Polish>Kokos Processing</Polish>
         </Key>
         <Key ID="STR_License_Iron">
             <Original>Iron Processing</Original>
@@ -9647,6 +9680,16 @@
             <German>Kokain Verarbeiter</German>
             <Portuguese>Processador de Cocaína</Portuguese>
             <Polish>Oczyszczanie kokainy</Polish>
+        <Key ID="STR_MAR_Kokos_processing_1">
+            <Original>Kokos Processing</Original>
+            <Czech>Kokos Processing</Czech>
+            <French>TKokos Processing</French>
+            <Spanish>Kokos Processing</Spanish>
+            <Italian>Kokos Processing</Italian>
+            <Russian></Russian>
+            <German>Kokus Verarbeiter</German>
+            <Portuguese>Kokos Processing</Portuguese>
+            <Polish>Kokos Processing</Polish>
         </Key>
         <Key ID="STR_MAR_Copper_Mine">
             <Original>Copper Mine</Original>
