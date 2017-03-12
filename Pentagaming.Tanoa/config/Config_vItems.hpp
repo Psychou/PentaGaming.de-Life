@@ -548,26 +548,27 @@ class VirtualItems {
     };
 
     //Food
-    class apple {
-        variable = "apple";
-        displayName = "STR_Item_Apple";
-        weight = 1;
+     class kokosnuss_unprocessed {
+        variable = "kokosnuss";
+        displayName = "STR_Item_kokosnuss";
+        weight = 4;
         buyPrice = 65;
         sellPrice = 50;
         illegal = false;
-        edible = 10;
+        edible = -1;
         icon = "icons\ico_apple.paa";
+        processedItem = "kokosnuss_processed";
     };
 
-    class peach {
-        variable = "peach";
-        displayName = "STR_Item_Peach";
-        weight = 1;
-        buyPrice = 68;
-        sellPrice = 55;
+	class kokosnuss_processed {
+        variable = "kokosnuss Öl";
+        displayName = "STR_Item_kokosnuss_Öl";
+        weight = 2;
+        buyPrice = 90;
+        sellPrice = 80;
         illegal = false;
-        edible = 10;
-        icon = "icons\ico_peach.paa";
+        edible = 20;
+        icon = "icons\ico_apple.paa";
     };
 
     class tbacon {

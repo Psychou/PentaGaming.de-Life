@@ -1,15 +1,8 @@
 class CfgGather {
     class Resources {
-        class apple {
+        class Kokus {
             amount = 5;
-            zones[] = { "apple_1", "apple_2", "apple_3", "apple_4" };
-            item = "";
-            zoneSize = 30;
-        };
-
-        class peach {
-            amount = 5;
-            zones[] = { "peaches_1", "peaches_2", "peaches_3", "peaches_4" };
+            zones[] = { "Kokus_1", "Kokus_2", "Kokus_3", "Kokus_4", "Kokus_5", "Kokus_6", "Kokus_7", "Kokus_8" };
             item = "";
             zoneSize = 30;
         };
