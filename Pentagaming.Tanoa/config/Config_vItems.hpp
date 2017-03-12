@@ -20,7 +20,7 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "toolkit", "fuelFull", "kokosnuss Oel", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "redgull", "tbacon", "toolkit", "fuelFull", "defibrillator" };
     };
 
     class rebel {
