@@ -11,28 +11,28 @@ class Licenses {
 	class Team {
 	    variable = "Team";
 		displayName = "NameUnknown.de Team";
-		price = "";
+		price = -1;
 		illegal = false;
 		side = "civ";
 	};
     class Team_Leitung {
 	    variable = "TeamLeitung";
 		displayName = "NameUnknown.de Projektleitung";
-		price = "";
+		price = -1;
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Admin {
 	    variable = "TeamAdmin";
 		displayName = "NameUnknown.de Admin";
-		price = "";
+		price = -1;
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Supp {
 	    variable = "TeamSupp";
 		displayName = "NameUnknown.de Supporter";
-		price = "";
+		price = -1;
 		illegal = false;
 		side = "civ";
 	};
@@ -40,9 +40,9 @@ class Licenses {
     //Civilian Licenses
 	
 	class Donator {
-		variable = "Donator"
+		variable = "Donator";
 		displayName = "STR_License_Donator";
-		price = "";
+		price = -1;
 		illegal = false;
 		side = "civ";
 	};
