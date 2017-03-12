@@ -108,10 +108,10 @@ class CarShops {
         side = "med";
         conditions = "";
         vehicles[] = {
-            { "C_Offroad_01_F", "" },
-            {  },
-            {  },
-            {  }
+            { "C_Offroad_02_unarmed_F", "" },
+            { "C_Hatchback_01_sport_F", "call life_mediclevel >= 6"},
+            { "C_Hatchback_01_F", "calll life_mediclevel >= 4" },
+            { "C_SUV_01_F" , "call life_mediclevel >= 5"}
         };
     };
 
@@ -120,6 +120,7 @@ class CarShops {
         conditions = "";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
+			{ "C_Van_01_box_F", "call life_mediclevel >= 2"},
             { "O_Heli_Light_02_unarmed_F", "call life_mediclevel >= 4" },
 			{ "B_T_VTOL_01_infantry_blue_F", "call life_mediclevel >= 6"},
 			{ "B_Heli_Transport_03_unarmed_F", "call life_mediclevel >= 7"}

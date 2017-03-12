@@ -38,6 +38,15 @@ class Licenses {
 	};
 	
     //Civilian Licenses
+	
+	class Donator {
+		variable = "Donator"
+		displayName = "STR_License_Donator";
+		price = "";
+		illegal = false;
+		side = "civ";
+	};
+	
     class driver {
         variable = "driver";
         displayName = "STR_License_Driver";

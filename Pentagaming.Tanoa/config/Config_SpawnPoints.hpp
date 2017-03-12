@@ -125,6 +125,13 @@ class CfgSpawnPoints {
 				conditions = "license_civ_Team";
 			};
 			
+			class Donator {
+				displayName = "Donator Spawn"
+				spawnMarker = "don_spawn_1"
+				icon = "\a3\ui_f\data\map\MapControl\watertower_ca.paa";
+				conditions = "license_civ_donater";
+			};
+			
             class Georgetown {
                 displayName = "Georgetown";
                 spawnMarker = "civ_spawn_1";
