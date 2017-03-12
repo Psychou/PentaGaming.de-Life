@@ -104,19 +104,6 @@ class Life_cell_phone {
 			w = 0.15;
 			h = 0.05;
         };
-		
-		class TextCopMsgAllButton : life_RscButtonMenu 
-		{
-			idc = 3023;
-			text = "Rundfunk";
-			colorBackground[] = {0,0.23,1,0.48};
-			onButtonClick = "[] call TON_fnc_cell_coptoall";
-			
-			x = 0.6125;
-			y = 0.88;
-			w = 0.15;
-			h = 0.05;
-		};
 
         class EMSRequest: Life_RscButtonMenu {
             idc = 3022;
@@ -128,6 +115,17 @@ class Life_cell_phone {
 			w = 0.15;
 			h = 0.05;
         };
+		
+		class PoliceMsgAllButton : life_RscButtonMenu {
+			idc = 3023;
+			text = "Rundfunk";
+			colorBackground[] = {"(profileNamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profileNamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profileNamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+			onButtonClick = "[] call TON_fnc_cell_polizeimsgall";
+			x = 0.6125;
+			y = 0.88;
+			w = 0.15;
+			h = 0.05;
+     };
 
         class CloseButtonKey: Life_RscButtonMenu {
             idc = -1;

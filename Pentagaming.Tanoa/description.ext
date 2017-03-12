@@ -205,4 +205,11 @@ class CfgNotifications {
         duration = 10;
         priority = 5;
     };
+	class PolizeiRundfunk {
+		title = "Polizei Rundfunk";
+		iconPicture = "icons\messagepolice.paa";
+		description = "%1";
+		duration = 10;
+		priority = 5;
+	};
 };

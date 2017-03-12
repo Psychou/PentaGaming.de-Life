@@ -20,6 +20,9 @@ if (FETCH_CONST(life_adminlevel) < 1) then {
     ctrlShow[3020,false];
     ctrlShow[3021,false];
 };
+if(((call life_coplevel) < 2) || playerSide != west) then {
+ ctrlShow[3023,false];
+};
 {
     if (alive _x && !(_x isEqualTo player)) then {
         _type = switch (side _x) do {
