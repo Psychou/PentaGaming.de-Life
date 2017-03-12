@@ -13,28 +13,28 @@ class VirtualShops {
         name = "STR_Shops_Market";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Oel", "storagesmall", "storagebig", "rabbit_raw", "hen_raw", "rooster_raw", "sheep_raw", "goat_raw" };
     };
 
     class med_market {
         name = "STR_Shops_Market";
         side = "med";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "toolkit", "fuelFull", "kokosnuss Öl", "defibrillator" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "toolkit", "fuelFull", "kokosnuss Oel", "defibrillator" };
     };
 
     class rebel {
         name = "STR_Shops_Rebel";
         side = "civ";
         conditions = "license_civ_rebel";
-        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Oel", "boltcutter", "blastingcharge" };
     };
 
     class gang {
         name = "STR_Shops_Gang";
         side = "civ";
         conditions = "";
-        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Öl", "boltcutter", "blastingcharge" };
+        items[] = { "waterBottle", "rabbit", "kokosnuss", "redgull", "tbacon", "lockpick", "pickaxe", "toolkit", "fuelEmpty", "kokosnuss Oel", "boltcutter", "blastingcharge" };
     };
 
     class wongs {
@@ -561,8 +561,8 @@ class VirtualItems {
     };
 
 	class kokosnuss_processed {
-        variable = "kokosnuss Öl";
-        displayName = "STR_Item_kokosnuss_Öl";
+        variable = "kokosnuss Oel";
+        displayName = "STR_Item_kokosnuss_Oel";
         weight = 2;
         buyPrice = 90;
         sellPrice = 80;
