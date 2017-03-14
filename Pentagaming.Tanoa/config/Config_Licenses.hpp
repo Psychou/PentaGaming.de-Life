@@ -227,8 +227,8 @@ class Licenses {
 	
 	class swat {
         variable = "swat";
-        displayName = "STR_License_swat";
-        price = "";
+        displayName = "STR_License_Swat";
+        price = -1;
         illegal = false;
         side = "cop";
     };
