@@ -10,28 +10,28 @@ class Licenses {
 	//Team Licenses
 	class Team {
 	    variable = "Team";
-		displayName = "NameUnknown.de Team";
+		displayName = "STR_License_Team";
 		price = -1;
 		illegal = false;
 		side = "civ";
 	};
     class Team_Leitung {
 	    variable = "TeamLeitung";
-		displayName = "NameUnknown.de Projektleitung";
+		displayName = "STR_License_TeamLeitung";
 		price = -1;
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Admin {
 	    variable = "TeamAdmin";
-		displayName = "NameUnknown.de Admin";
+		displayName = "STR_License_TeamAdmin";
 		price = -1;
 		illegal = false;
 		side = "civ";
 	};
 	class Team_Supp {
 	    variable = "TeamSupp";
-		displayName = "NameUnknown.de Supporter";
+		displayName = "STR_License_TeamSupp";
 		price = -1;
 		illegal = false;
 		side = "civ";

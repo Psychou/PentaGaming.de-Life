@@ -7071,15 +7071,59 @@
             <Polish>Trening straż przybrzeżna</Polish>
         </Key>
 		<Key ID="STR_License_swat">
-            <Original>S.W.A.T. Beamter</Original>
-            <Czech>S.W.A.T. Beamter</Czech>
-            <Spanish>S.W.A.T. Beamter</Spanish>
-            <Russian>S.W.A.T. Beamter</Russian>
-            <German>S.W.A.T. Beamter</German>
-            <French>S.W.A.T. Beamter</French>
-            <Italian>S.W.A.T. Beamter</Italian>
-            <Portuguese>S.W.A.T. Beamter</Portuguese>
-            <Polish>S.W.A.T. Beamter</Polish>
+            <Original>SWAT Beamter</Original>
+            <Czech>SWAT Beamter</Czech>
+            <Spanish>SWAT Beamter</Spanish>
+            <Russian>SWAT Beamter</Russian>
+            <German>SWAT Beamter</German>
+            <French>SWAT Beamter</French>
+            <Italian>SWAT Beamter</Italian>
+            <Portuguese>SWAT Beamter</Portuguese>
+            <Polish>SWAT Beamter</Polish>
+        </Key>
+		<Key ID="STR_License_Team">
+            <Original>NameUnknown Team</Original>
+            <Czech>NameUnknown Team</Czech>
+            <Spanish>NameUnknown Team</Spanish>
+            <Russian>NameUnknown Team</Russian>
+            <German>NameUnknown Team</German>
+            <French>NameUnknown Team</French>
+            <Italian>NameUnknown Team</Italian>
+            <Portuguese>NameUnknown Team</Portuguese>
+            <Polish>NameUnknown Team</Polish>
+        </Key>
+		<Key ID="STR_License_TeamLeitung">
+            <Original>NameUnknown Team Leitung</Original>
+            <Czech>NameUnknown Team Leitung</Czech>
+            <Spanish>NameUnknown Team Leitung</Spanish>
+            <Russian>NameUnknown Team Leitung</Russian>
+            <German>NameUnknown Team Leitung</German>
+            <French>NameUnknown Team Leitung</French>
+            <Italian>NameUnknown Team Leitung</Italian>
+            <Portuguese>NameUnknown Team Leitung</Portuguese>
+            <Polish>NameUnknown Team Leitung</Polish>
+        </Key>
+		<Key ID="STR_License_TeamAdmin">
+            <Original>NameUnknown Team Admin<Original>
+            <Czech>NameUnknown Team Admin</Czech>
+            <Spanish>NameUnknown Team Admin</Spanish>
+            <Russian>NameUnknown Team Admin</Russian>
+            <German>NameUnknown Team Admin</German>
+            <French>NameUnknown Team Admin</French>
+            <Italian>NameUnknown Team Admin</Italian>
+            <Portuguese>NameUnknown Team Admin</Portuguese>
+            <Polish>NameUnknown Team Admin</Polish>
+        </Key>
+		<Key ID="STR_License_TeamSupp">
+            <Original>NameUnknown Team Supporter<Original>
+            <Czech>NameUnknown Team Supporter</Czech>
+            <Spanish>NameUnknown Team Supporter</Spanish>
+            <Russian>NameUnknown Team Supporter</Russian>
+            <German>NameUnknown Team Supporter</German>
+            <French>NameUnknown Team Supporter</French>
+            <Italian>NameUnknown Team Supporter</Italian>
+            <Portuguese>NameUnknown Team Supporter</Portuguese>
+            <Polish>NameUnknown Team Supporter</Polish>
         </Key>
         <Key ID="STR_License_Rebel">
             <Original>Rebel Training</Original>
