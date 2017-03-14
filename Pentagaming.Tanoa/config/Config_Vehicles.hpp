@@ -110,7 +110,7 @@ class CarShops {
         vehicles[] = {
             { "C_Offroad_02_unarmed_F", "" },
             { "C_Hatchback_01_sport_F", "call life_mediclevel >= 6"},
-            { "C_Hatchback_01_F", "calll life_mediclevel >= 4" },
+            { "C_Hatchback_01_F", "call life_mediclevel >= 4" },
             { "C_SUV_01_F" , "call life_mediclevel >= 5"}
         };
     };
