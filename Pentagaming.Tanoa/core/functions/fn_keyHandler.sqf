@@ -199,7 +199,8 @@ switch (_code) do {
 //Q Key
 case 16:
 {    
-	if((!life_action_inUse) && (!life_action_gathering) && (vehicle player == player)) then {
+	if((!life_action_inUse) && (!life_action_gathering) && (vehicle player == player)) then
+	{
 			if (((player distance (getMarkerPos "lead_1") < 30) || (player distance (getMarkerPos "iron_1") < 30) || (player distance (getMarkerPos "salt_1") < 120) || (player distance (getMarkerPos "sand_1") < 75) 			|| (player distance (getMarkerPos "diamond_1") < 50) || (player distance (getMarkerPos "oil_1") < 40) || (player distance (getMarkerPos "oil_2") < 40) || (player distance (getMarkerPos "rock_1") < 50) 			|| (player distance (getMarkerPos "coal_1") < 50)) && (life_inv_pickaxe >= 1)) then
 			{
 				[] spawn {
@@ -209,21 +210,11 @@ case 16:
 						};
 			}	else
 				{
-					if (player distance (getMarkerPos "wood_1") < 50 && (life_inv_chainsaw >= 1)) then
-					{
-						[] spawn {
-						private "_handle";
-						_handle = [] spawn life_fnc_chainsawUse;
-						waitUntil {scriptDone _handle};
-						};
-					} else
-					  {
 						[] spawn {
 						private "_handle";
 						_handle = [] spawn life_fnc_gather;
 						waitUntil {scriptDone _handle};
 						};
-					  };
 				};
 	};
 };
